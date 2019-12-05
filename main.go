@@ -28,6 +28,7 @@ func main() {
 	pathMap["go"] = "https://golang.org"
 	pathMap["github"] = "https://github.com/reaganiwadha"
 	pathMap["gci"] = "https://codein.withgoogle.com/"
+	pathMap["pl"] = "https://pl.wikipedia.org/wiki/"
 
 	http.HandleFunc("/", redirect)
 	if err := http.ListenAndServe(":8080", nil); err != nil {
